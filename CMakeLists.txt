@@ -1,6 +1,13 @@
 cmake_minimum_required(VERSION 3.23)
 project(subscriptions)
 
-set(CMAKE_CXX_STANDARD 17)
+#include_directories(src)
+add_subdirectory(src)
 
-add_library(subscriptions library.cpp)
+option(PACKAGE_TESTS "Build the tests" ON)
+if(PACKAGE_TESTS)
+    enable_testing()
+    include(GoogleTest)
+    add_subdirectory(tests)
+endif()
+

@@ -1,6 +1,0 @@
-#ifndef SUBSCRIPTIONS_LIBRARY_H
-#define SUBSCRIPTIONS_LIBRARY_H
-
-void hello();
-
-#endif //SUBSCRIPTIONS_LIBRARY_H
